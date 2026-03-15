@@ -3,71 +3,80 @@
 **Módulo:** Fundamentos de Hardware (FHW)  
 **Alumno:** Ugo Pérez Ruiz  
 **Fecha:** 15 Marzo 2026  
-**Enlace al repositorio:** https://github.com/cuptuzz/Proyecto_RA2_UT4
+**Enlace al repositorio:** [github.com/cuptuzz/Proyecto_RA2_UT4](https://github.com/cuptuzz/Proyecto_RA2_UT4)
 
----
+![Portada del Proyecto](../assets/img/portada.png)
+
+<div style="page-break-after: always;"></div>
 
 # EJERCICIO 1. Entorno virtual e instalación de Windows
 
 ## 1. Configuración de la Máquina Virtual
 * **Hipervisor:** VirtualBox
 * **Recursos:** 8GB RAM, 4 Núcleos CPU, 50GB Disco.
-* **Justificación:** 
-- Se asignan 8GB de RAM y 4 núcleos para garantizar un rendimiento fluido en multitarea.
- 
-- Los 50GB cubren de sobra el sistema operativo y el software base sin quitarle espacio innecesario al PC anfitrión.
+* **Justificación:** Se han asignado estos recursos para garantizar un rendimiento óptimo del sistema operativo Windows 10 en un entorno de oficina.
 
-![Configuración VM](../../assets/img/10-ejercicio1/01-config.png)
+![Resumen de configuración](../assets/img/10-ejercicio1/01-config.png)
+![Configuración de hardware](../assets/img/10-ejercicio1/01-config-hardware.png)
+![Configuración de red](../assets/img/10-ejercicio1/03-config-red.png)
+![Configuración de pantalla](../assets/img/10-ejercicio1/04-config-pantalla.png)
 
-## 2. Instalación y Usuarios
-* **Sistema Operativo:** Windows 10 Home.
-* **Usuarios creados:** "Admin" (Administrador) y "Empleado" (Estándar).
+## 2. Proceso de instalación
+1. **Arranque:** Inicio de la VM mediante la ISO oficial de Windows 10.
+2. **Particionado:** Selección de instalación personalizada (50GB).
+3. **Instalación:** Ejecución del copiado y preparación de archivos.
+4. **Optimización:** Instalación de **Guest Additions** para resolución y fluidez.
 
-![Usuarios creados](../../assets/img/10-ejercicio1/02-usuarios.png)
+![Particionado de disco](../assets/img/10-ejercicio1/05-particionado.png)
+![Progreso de instalación](../assets/img/10-ejercicio1/05-proceso-instalacion.png)
+![Instalación de Guest Additions](../assets/img/10-ejercicio1/07-instalacion-tools.png)
 
----
+## 3. Usuarios y Sistema Operativo
+* **Admin:** Cuenta de administrador local.
+* **Empleado:** Cuenta de usuario estándar.
 
-## EJERCICIO 2. Software de Oficina
+![Creación de usuario Admin](../assets/img/10-ejercicio1/02-usuarios-admin.png)
+![Panel de gestión de usuarios](../assets/img/10-ejercicio1/02-usuarios.png)
+![Escritorio del sistema operativo](../assets/img/10-ejercicio1/06-sistema-operativo.png)
 
-| Herramienta | Función | Motivo de elección | Ventaja en la oficina |
-| :--- | :--- | :--- | :--- |
-| **Google Chrome** | Navegador | Integración nativa con el ecosistema Google. | Acceso rápido y sin fallos a Docs, Drive y Gmail. |
-| **Sumatra PDF** | Lector PDF | Extremadamente ligero y de código abierto. | Abre documentos al instante sin consumir RAM. |
-| **7-Zip** | Compresor | Open Source, soporta todos los formatos. | Gratuito, seguro y sin publicidad intrusiva. |
-| **Google Drive** | Nube | App de escritorio oficial. | Sincronización directa desde el explorador de archivos. |
+<div style="page-break-after: always;"></div>
 
-### Evidencias de instalación
-![Chrome y Google Workspace](../assets/img/20-ejercicio2/01-chrome.png)
-![7-Zip y Sumatra](../assets/img/20-ejercicio2/02-herramientas.png)
+# EJERCICIO 2. Selección e instalación de software
 
----
+## 1. Relación de software instalado
+| Programa | Tipo | Justificación técnica para oficina |
+| :--- | :--- | :--- |
+| **Google Chrome** | Navegador | Estándar de compatibilidad para herramientas SaaS. |
+| **7-Zip** | Compresor | Software ligero para gestionar archivos adjuntos. |
+| **SumatraPDF** | Visor PDF | Consumo mínimo de RAM para apertura instantánea. |
+| **CPU-Z** | Diagnóstico | Identificación rápida de hardware ante incidencias. |
+| **Guest Additions** | Herramientas | Optimización de drivers y fluidez en la VM. |
 
-## EJERCICIO 3. Seguridad, Diagnóstico y Pruebas
+## 2. Evidencia de instalación
+![Software instalado](../assets/img/20-ejercicio2/01-software-instalado.png)
 
-### 1. Mantenimiento y Seguridad
-* **Antivirus:** Windows Defender. *Justificación:* Integrado en el sistema, no requiere licencias extra y es suficiente para ofimática básica.
-* **Diagnóstico:** CPU-Z. *Justificación:* Permite verificar rápidamente que la VM detecta el hardware asignado.
-* **Actualizaciones:** Windows Update verificado al 100%.
+<div style="page-break-after: always;"></div>
 
-### 2. Pruebas de funcionamiento
-* [x] Acceso correcto a Gmail y Google Docs.
-* [x] Archivo PDF abierto sin errores.
-* [x] Archivo comprimido y descomprimido con 7-Zip.
-* [x] Análisis rápido de antivirus completado.
+# EJERCICIO 3. Seguridad, mantenimiento y validación
 
-### Evidencias
-![Análisis Defender](../assets/img/30-ejercicio3/01-defender.png)
-![Pruebas funcionales](../assets/img/30-ejercicio3/02-pruebas.png)
+## 1. Revisión de Seguridad y Sistema
+![Seguridad del sistema](../assets/img/30-ejercicio3/01-seguridad.png)
+![Diagnóstico de Hardware](../assets/img/30-ejercicio3/02-diagnostico.png)
+![Windows Update](../assets/img/30-ejercicio3/03-updates.png)
 
----
+## 2. Pruebas de funcionamiento
+![Prueba de PDF](../assets/img/30-ejercicio3/04-pruebas-pdf.png)
+![Prueba de compresión](../assets/img/30-ejercicio3/05-compresion.png)
 
-## EJERCICIO 4. Incidencias y Conclusión Final
+<div style="page-break-after: always;"></div>
 
-### Incidencias encontradas
-* **Problema:** [Ej: La máquina virtual no tenía conexión a Internet al arrancar].
-* **Solución:** [Ej: Apagar la VM, ir a Red en VirtualBox y cambiar de NAT a Adaptador Puente].
+# EJERCICIO 4. Incidencias y Conclusión Final
 
-![Solución incidencia](../assets/img/40-incidencias/01-incidencia.png)
+## Incidencias encontradas
+* **Problema:** El instalador de Windows 10 forzaba la creación de una cuenta Microsoft.
+* **Solución:** Se deshabilitó el adaptador de red en VirtualBox para forzar la creación de la cuenta local "Admin".
 
-### Conclusión
-El equipo ha sido configurado con éxito. Se encuentra operativo, actualizado y con las medidas de seguridad básicas activadas. Las herramientas seleccionadas garantizan un entorno de trabajo rápido y sin distracciones, listo para ser entregado al usuario final.
+![Solución incidencia](../assets/img/10-ejercicio1/02-usuarios-admin.png)
+
+## Conclusión
+El equipo ha sido configurado con éxito. Se encuentra operativo, actualizado y con las medidas de seguridad básicas activadas, listo para ser entregado al usuario final.
